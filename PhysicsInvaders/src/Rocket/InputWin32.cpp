@@ -28,7 +28,9 @@
 #include "InputWin32.h"
 #include <Rocket/Core/Context.h>
 #include <Rocket/Core/Input.h>
+#ifdef BUILD_DEBUG
 #include <Rocket/Debugger.h>
+#endif
 
 namespace RocketHelp 
 {
@@ -94,12 +96,14 @@ namespace RocketHelp
 				int key_modifier_state = GetKeyModifierState();
 
 				// Check for a shift-~ to toggle the debugger.
+#ifdef BUILD_DEBUG
 				if (key_identifier == Rocket::Core::Input::KI_OEM_3 &&
 					key_modifier_state & Rocket::Core::Input::KM_SHIFT)
 				{
 					Rocket::Debugger::SetVisible(!Rocket::Debugger::IsVisible());
 					break;
 				}
+#endif
 
 				context->ProcessKeyDown(key_identifier, key_modifier_state);
 			}

@@ -86,14 +86,13 @@ xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketDebugger_d.dll" "$(OutD
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>d3dcompiler.lib;d3d11.lib;box2d.lib;d3dx11.lib;Effects11.lib;libboost_thread-vc100-mt-1_44.lib;RocketCore.lib;RocketDebugger.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3dcompiler.lib;d3d11.lib;box2d.lib;d3dx11.lib;Effects11.lib;libboost_thread-vc100-mt-1_44.lib;RocketCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>echo COPYING CONTENT for $(ProjectName) 
 
 xcopy "$(SolutionDir)Content\*.*" "$(OutDir)Content\" /i /d /y /e
-xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore.dll" "$(OutDir)" /i /d /y /e 
-xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketDebugger.dll" "$(OutDir)" /i /d /y /e </Command>
+xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore.dll" "$(OutDir)" /i /d /y /e </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

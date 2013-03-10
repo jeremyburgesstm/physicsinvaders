@@ -138,7 +138,9 @@ ApplicationMain::ApplicationMain(void)
 	RocketHelp::InputWin32::Initialise();
 	Rocket::Core::Initialise();
 	m_rocketContext = Rocket::Core::CreateContext("default", Rocket::Core::Vector2i(width, height));
+#ifdef BUILD_DEBUG
 	Rocket::Debugger::Initialise(m_rocketContext);
+#endif
 	Input::SetContext(m_rocketContext);
 	
 	// Create our flow manager.
