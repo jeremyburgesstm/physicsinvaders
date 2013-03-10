@@ -1,0 +1,13 @@
+syntax: glob
+.idb
+*.idb
+ExternalLibs/Box2D/Build/vs2010/Box2D.sdf
+ExternalLibs/Box2D/Build/vs2010/Box2D.suo
+ExternalLibs/Box2D/Build/vs2010/Box2D.v11.suo
+ExternalLibs/Box2D/Build/vs2010/Box2D.vcxproj.user
+*.pdb
+*.sdf
+PhysicsInvaders/Debug/*
+PhysicsInvaders/Release/*
+*.opensdf
+*.user

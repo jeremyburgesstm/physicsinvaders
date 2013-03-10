@@ -1,0 +1,20 @@
+<rml>
+	<head>
+		<link type="text/rcss" href="../shared/core.rcss"/>
+		<style>
+			body
+			{
+				width: 100%;
+				height: 100%;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<body id="clicktarget">
+		<div class="innerbody">
+			<div class="ingame infotitle" id="title">YOU WIN. WELL DONE!</div>
+			<div class="ingame infosubtitle" id="score">SCORE: 1</div>
+		</div>
+	</body>
+</rml>

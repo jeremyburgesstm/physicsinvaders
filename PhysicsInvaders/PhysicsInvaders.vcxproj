@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CAB009B7-9E1A-4AD4-AA07-0A96C156982D}</ProjectGuid>
+    <RootNamespace>PhysicsInvaders</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>.\src;$(DXSDK_DIR)Include;$(BOOST_ROOT);..\ExternalLibs\Eigen;..\ExternalLibs\libRocket\Include;..\ExternalLibs\D3D11Effect\Inc;..\ExternalLibs\Box2D;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(BOOST_ROOT)\lib;..\ExternalLibs\librocket\bin;..\ExternalLibs\Box2D\Build\vs2010\bin\Debug;..\ExternalLibs\D3D11Effect\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\Application\</OutDir>
+    <IntDir>$(Configuration)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>.\src;$(DXSDK_DIR)Include;$(BOOST_ROOT);..\ExternalLibs\Eigen;..\ExternalLibs\libRocket\Include;..\ExternalLibs\D3D11Effect\Inc;..\ExternalLibs\Box2D;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(BOOST_ROOT)\lib;..\ExternalLibs\librocket\bin;..\ExternalLibs\Box2D\Build\vs2010\bin\Release;..\ExternalLibs\D3D11Effect\Release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\Application\</OutDir>
+    <IntDir>$(Configuration)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>NOMINMAX;BUILD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>Core/CoreIncludes.h;Core/Typedefs.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dcompiler.lib;d3d11.lib;box2d.lib;d3dx11d.lib;Effects11.lib;libboost_thread-vc100-mt-gd-1_44.lib;RocketCore_d.lib;RocketDebugger_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo COPYING CONTENT for $(ProjectName) 
+
+xcopy "$(SolutionDir)Content\*.*" "$(OutDir)Content\" /i /d /y /e
+xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore_d.dll" "$(OutDir)" /i /d /y /e 
+xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketDebugger_d.dll" "$(OutDir)" /i /d /y /e </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NOMINMAX;BUILD_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>Core/CoreIncludes.h;Core/Typedefs.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3dcompiler.lib;d3d11.lib;box2d.lib;d3dx11.lib;Effects11.lib;libboost_thread-vc100-mt-1_44.lib;RocketCore.lib;RocketDebugger.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo COPYING CONTENT for $(ProjectName) 
+
+xcopy "$(SolutionDir)Content\*.*" "$(OutDir)Content\" /i /d /y /e
+xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore.dll" "$(OutDir)" /i /d /y /e 
+xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketDebugger.dll" "$(OutDir)" /i /d /y /e </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AppInit.cpp" />
+    <ClCompile Include="src\ApplicationMain.cpp" />
+    <ClCompile Include=".\src\CoreComponents\CameraComponent.cpp" />
+    <ClCompile Include="src\ComponentModel\Component.cpp" />
+    <ClCompile Include="src\ComponentModel\ComponentPool.cpp" />
+    <ClCompile Include="src\ComponentModel\Entity.cpp" />
+    <ClCompile Include="src\ComponentModel\EntityComponentManager.cpp" />
+    <ClCompile Include="src\CoreComponents\Box2DBodyComponent.cpp" />
+    <ClCompile Include="src\CoreComponents\MoveableQuadComponent.cpp" />
+    <ClCompile Include="src\Core\ConfigFile.cpp" />
+    <ClCompile Include="src\Core\RealTime.cpp" />
+    <ClCompile Include="src\Core\RunInformation.cpp" />
+    <ClCompile Include="src\Core\ScaledTime.cpp" />
+    <ClCompile Include="src\Core\SteppedTime.cpp" />
+    <ClCompile Include="src\Game\Components\Bullet.cpp" />
+    <ClCompile Include="src\Game\Components\Invader.cpp" />
+    <ClCompile Include="src\Game\Components\InvaderWaveManager.cpp" />
+    <ClCompile Include="src\Game\Components\InvaderWaveMover.cpp" />
+    <ClCompile Include="src\Game\Components\TurretController.cpp" />
+    <ClCompile Include="src\Game\Components\TurretPointerMovementComponent.cpp" />
+    <ClCompile Include="src\Game\Components\TurretYokeComponent.cpp" />
+    <ClCompile Include=".\src\Core\GameTime.cpp" />
+    <ClCompile Include="src\game\debug\DebugGameTimeController.cpp" />
+    <ClCompile Include="src\Game\GameStates\CheckMoreLevelsState.cpp" />
+    <ClCompile Include="src\Game\GameStates\EndState.cpp" />
+    <ClCompile Include="src\Game\GameStates\PlayState.cpp" />
+    <ClCompile Include="src\Game\GameStates\SetupGameState.cpp" />
+    <ClCompile Include="src\Game\GameStates\SetupStageState.cpp" />
+    <ClCompile Include="src\Game\GameStates\WaitPausedState.cpp" />
+    <ClCompile Include="src\Game\GameWorld.cpp" />
+    <ClCompile Include="src\Game\Messaging\Box2DMessageListener.cpp" />
+    <ClCompile Include="src\Game\Messaging\GameMessageHub.cpp" />
+    <ClCompile Include="src\Game\Physics\GamePhysicsConstants.cpp" />
+    <ClCompile Include="src\Game\Screens\HUDScreen.cpp" />
+    <ClCompile Include="src\Game\SpaceInvadersFlowNode.cpp" />
+    <ClCompile Include="src\Game\StateOfTheGame.cpp" />
+    <ClCompile Include="src\Graphics\QuadRendererD3D.cpp" />
+    <ClCompile Include="src\Graphics\EffectD3D.cpp" />
+    <ClCompile Include="src\Graphics\EigenToD3D.cpp" />
+    <ClCompile Include="src\Graphics\MoveableTexturedQuad.cpp" />
+    <ClCompile Include="src\Graphics\RendererD3D.cpp" />
+    <ClCompile Include="src\Graphics\Texture2DD3D.cpp" />
+    <ClCompile Include="src\Graphics\TextureManager.cpp" />
+    <ClCompile Include="src\Input\PointerEvent.cpp" />
+    <ClCompile Include="src\Input\PointerState.cpp" />
+    <ClCompile Include="src\Physics\EigenToBox2D.cpp" />
+    <ClCompile Include="src\Rocket\Input.cpp" />
+    <ClCompile Include="src\Rocket\InputWin32.cpp" />
+    <ClCompile Include="src\Rocket\JBRocketSystemInterface.cpp" />
+    <ClCompile Include="src\Rocket\JBRocketRenderInterfaceD3D.cpp" />
+    <ClCompile Include="src\Rocket\ProgressScreen.cpp" />
+    <ClCompile Include="src\Rocket\RocketScreen.cpp" />
+    <ClCompile Include="src\Screens\RocketFlowScreenBase.cpp" />
+    <ClCompile Include="src\Screens\RocketFlowScreenClickBody.cpp" />
+    <ClCompile Include="src\Screens\RocketFlowScreenTimed.cpp" />
+    <ClCompile Include="src\ShouldBeDataDriven\ApplicationSetup.cpp" />
+    <ClCompile Include="src\ShouldBeDataDriven\EntityCreation.cpp" />
+    <ClCompile Include="src\ShouldBeDataDriven\GameSetup.cpp" />
+    <ClCompile Include="src\Utility\ApplicationTime.cpp" />
+    <ClCompile Include="src\Utility\Factory.cpp" />
+    <ClCompile Include="src\Utility\Log.cpp" />
+    <ClCompile Include="src\Utility\LogConstants.cpp" />
+    <ClCompile Include="src\Utility\LogDebugTarget.cpp" />
+    <ClCompile Include=".\src\Win32\Win32InputState.cpp" />
+    <ClCompile Include="src\Win32\InputSystemWin32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ApplicationMain.h" />
+    <ClInclude Include="src\ComponentModel\Component.h" />
+    <ClInclude Include="src\ComponentModel\ComponentPool.h" />
+    <ClInclude Include="src\ComponentModel\Entity.h" />
+    <ClInclude Include="src\ComponentModel\EntityComponentManager.h" />
+    <ClInclude Include=".\src\Game\Components\InvaderWaveMover.h" />
+    <ClInclude Include="src\CoreComponents\Box2DBodyComponent.h" />
+    <ClInclude Include="src\CoreComponents\CameraComponent.h" />
+    <ClInclude Include="src\CoreComponents\MoveableQuadComponent.h" />
+    <ClInclude Include="src\Core\ConfigFile.h" />
+    <ClInclude Include="src\Core\CoreIncludes.h" />
+    <ClInclude Include="src\Core\EigenIncludes.h" />
+    <ClInclude Include="src\Core\Functional\Action.h" />
+    <ClInclude Include="src\Core\Functional\Invoker.h" />
+    <ClInclude Include="src\Core\ITimeSource.h" />
+    <ClInclude Include="src\Core\RealTime.h" />
+    <ClInclude Include="src\Core\RunInformation.h" />
+    <ClInclude Include="src\Core\ScaledTime.h" />
+    <ClInclude Include="src\Core\StateMachine\SimpleBaseState.h" />
+    <ClInclude Include="src\Core\StateMachine\SimpleStateMachine.h" />
+    <ClInclude Include="src\Core\StateMachine\ThreadedBaseState.h" />
+    <ClInclude Include="src\Core\StateMachine\ThreadedStateMachine.h" />
+    <ClInclude Include="src\Core\SteppedTime.h" />
+    <ClInclude Include="src\Core\Typedefs.h" />
+    <ClInclude Include="src\Game\Components\Bullet.h" />
+    <ClInclude Include="src\Game\Components\Invader.h" />
+    <ClInclude Include="src\Game\Components\InvaderWaveManager.h" />
+    <ClInclude Include="src\Game\Components\TurretController.h" />
+    <ClInclude Include="src\Game\Components\TurretPointerMovementComponent.h" />
+    <ClInclude Include="src\Game\Components\TurretYokeComponent.h" />
+    <ClInclude Include=".\src\Core\GameTime.h" />
+    <ClInclude Include="src\Game\Data\InvaderWaveDefinition.h" />
+    <ClInclude Include="src\game\debug\DebugGameTimeController.h" />
+    <ClInclude Include="src\Game\GameContext.h" />
+    <ClInclude Include="src\Game\GameStates\CheckMoreLevelsState.h" />
+    <ClInclude Include="src\Game\GameStates\EndState.h" />
+    <ClInclude Include="src\Game\GameStates\GameStateContext.h" />
+    <ClInclude Include="src\Game\GameStates\PlayState.h" />
+    <ClInclude Include="src\Game\GameStates\SetupGameState.h" />
+    <ClInclude Include="src\Game\GameStates\SetupStageState.h" />
+    <ClInclude Include="src\Game\GameStates\WaitPausedState.h" />
+    <ClInclude Include="src\Game\GameWorld.h" />
+    <ClInclude Include="src\Game\Messaging\Box2DMessageListener.h" />
+    <ClInclude Include="src\Game\Messaging\GameEventTypes.h" />
+    <ClInclude Include="src\Game\Messaging\GameMessageHub.h" />
+    <ClInclude Include="src\Game\Messaging\PhysicsContactEvent.h" />
+    <ClInclude Include="src\Game\Physics\GamePhysicsConstants.h" />
+    <ClInclude Include="src\Game\Screens\HUDScreen.h" />
+    <ClInclude Include="src\Game\SpaceInvadersFlowNode.h" />
+    <ClInclude Include="src\Game\StateOfTheGame.h" />
+    <ClInclude Include="src\Graphics\ICamera.h" />
+    <ClInclude Include="src\Graphics\QuadRendererD3D.h" />
+    <ClInclude Include="src\Graphics\EffectD3D.h" />
+    <ClInclude Include="src\Graphics\EigenToD3D.h" />
+    <ClInclude Include="src\Graphics\ITexture2D.h" />
+    <ClInclude Include="src\Graphics\MoveableTexturedQuad.h" />
+    <ClInclude Include="src\Graphics\RendererD3D.h" />
+    <ClInclude Include="src\Graphics\Texture2DD3D.h" />
+    <ClInclude Include=".\src\Input\PointerEvent.h" />
+    <ClInclude Include="src\Input\InputSystem.h" />
+    <ClInclude Include="src\Input\KeyboardEvent.h" />
+    <ClInclude Include="src\Input\KeyCodes.h" />
+    <ClInclude Include="src\Input\PointerState.h" />
+    <ClInclude Include="src\Physics\EigenToBox2D.h" />
+    <ClInclude Include="src\Rocket\Input.h" />
+    <ClInclude Include="src\Rocket\InputWin32.h" />
+    <ClInclude Include="src\Rocket\JBRocketSystemInterface.h" />
+    <ClInclude Include="src\Rocket\JBRocketRenderInterfaceD3D.h" />
+    <ClInclude Include="src\Rocket\ProgressScreen.h" />
+    <ClInclude Include="src\Rocket\RocketScreen.h" />
+    <ClInclude Include="src\Screens\ApplicationContext.h" />
+    <ClInclude Include="src\Screens\RocketFlowScreenBase.h" />
+    <ClInclude Include="src\Screens\RocketFlowScreenClickBody.h" />
+    <ClInclude Include="src\Screens\RocketFlowScreenTimed.h" />
+    <ClInclude Include="src\ShouldBeDataDriven\ApplicationSetup.h" />
+    <ClInclude Include="src\ShouldBeDataDriven\EntityCreation.h" />
+    <ClInclude Include="src\ShouldBeDataDriven\GameSetup.h" />
+    <ClInclude Include="src\Utility\ApplicationTime.h" />
+    <ClInclude Include="src\Utility\DefaultInstancer.h" />
+    <ClInclude Include="src\Utility\Factory.h" />
+    <ClInclude Include="src\Utility\GeneralisedLockFreeQueue.h" />
+    <ClInclude Include="src\Utility\GenericTraversal.h" />
+    <ClInclude Include=".\src\Utility\Helpers.h" />
+    <ClInclude Include="src\Utility\ILogTarget.h" />
+    <ClInclude Include="src\Utility\Instancer.h" />
+    <ClInclude Include="src\Utility\Log.h" />
+    <ClInclude Include="src\Utility\LogConstants.h" />
+    <ClInclude Include="src\Utility\LogDebugTarget.h" />
+    <ClInclude Include="src\Utility\Rect.h" />
+    <ClInclude Include="src\Utility\SimpleAnimators.h" />
+    <ClInclude Include="src\Utility\SimpleLockFreeQueue.h" />
+    <ClInclude Include=".\src\Win32\Win32InputState.h" />
+    <ClInclude Include=".\src\Graphics\TextureManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Shaders\TexturedUnlit.fx">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

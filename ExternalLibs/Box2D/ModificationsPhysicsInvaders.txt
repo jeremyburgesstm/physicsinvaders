@@ -1,0 +1,1 @@
+Please note that the contents of this directory is a _subset_ of Box2D, and should contain files required to build physics invaders, plus a few other bits. If you need to, you can unpack a full copy of Box2D over the top of this, and it should work fine.

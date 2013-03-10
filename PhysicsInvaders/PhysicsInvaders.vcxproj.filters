@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{527782a5-b20d-458b-80c5-deff86ff2438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{15352ec3-1fe4-4691-8cc5-43601a3ce112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{0976fa30-6a56-4691-909b-31901f962aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{f909f938-1671-43d8-b0dd-6080adc39966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{afc1d6bd-ede1-42ca-9932-54c93d0f9e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{0bb4929e-346f-40a5-bf6c-4f036de22628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{89b0999e-62ca-4691-a6af-a98f09fed7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rocket">
+      <UniqueIdentifier>{612478f6-6bc2-4a1a-a6de-295e0b3fced2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rocket">
+      <UniqueIdentifier>{7425310a-4b32-49bf-9dec-753a7617e592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{2c39b74f-5bf1-4381-906b-e2a617d682c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ComponentModel">
+      <UniqueIdentifier>{d45356a5-8433-443b-ad0b-9488fdf5d9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ComponentModel">
+      <UniqueIdentifier>{84249d1d-79b6-4fdc-92c2-d56f28024164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{fc703bae-1c80-429c-bd70-97556d84c7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{883bd9cf-12a2-4b3e-aa97-e48f8c33856f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Components">
+      <UniqueIdentifier>{7f2749d5-d9a0-4783-a932-7c91de0fc22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CoreComponents">
+      <UniqueIdentifier>{a57fc307-663e-42c7-abee-197cf21d02ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{66493b2a-c648-4207-a975-a83921356855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{f7f03347-89ee-47c4-9ed2-27ac12d5140e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens">
+      <UniqueIdentifier>{382a5720-0e62-4229-b951-7b092e54b39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CoreComponents">
+      <UniqueIdentifier>{60affbdd-c30d-4833-bcd6-2a81bd3af6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{425f0d51-6379-49fa-a206-710e312fd82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{eab1498b-2494-4643-839e-0663498cdaec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Components">
+      <UniqueIdentifier>{86df8c43-c642-44ea-ab6f-05800e923763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{2527a837-16df-4bb5-9a11-f66aa9059229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Data">
+      <UniqueIdentifier>{2891a523-2ea8-4196-8301-1e86bc104f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Functional">
+      <UniqueIdentifier>{15a3ef39-7e4c-499c-b029-2ec11e651291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Messaging">
+      <UniqueIdentifier>{e1546a7b-d655-4c3e-8bef-f5af5025037c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Messaging">
+      <UniqueIdentifier>{5d95339a-3d65-4f27-9e08-78f655ca5333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Physics">
+      <UniqueIdentifier>{be0c72a8-0d61-4bfd-bfbd-8e52300f0df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Physics">
+      <UniqueIdentifier>{7c555a81-d30d-4e70-8612-6aee0d001eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\StateMachine">
+      <UniqueIdentifier>{a5045a65-e75b-4377-bd5d-4ac3a186cfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\GameStates">
+      <UniqueIdentifier>{c1964cc1-98b6-451f-b8a7-382611cecdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GameStates">
+      <UniqueIdentifier>{97e3d55b-74cb-45d8-bd79-3d0be5b54150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Debug">
+      <UniqueIdentifier>{900226bb-e5e5-4615-b555-b9ac661a53a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Debug">
+      <UniqueIdentifier>{df26f19e-2dd7-4b4a-9d57-5b218d4db962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Screens">
+      <UniqueIdentifier>{bc480a04-cc6d-4888-8988-e3302c1d0479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Screens">
+      <UniqueIdentifier>{887ff505-8966-4c73-a010-49bbec209eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ShouldBeDataDriven">
+      <UniqueIdentifier>{f5d3f359-29a8-4e80-9460-6219f626dd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ShouldBeDataDriven">
+      <UniqueIdentifier>{c45cf39a-94cb-497d-a928-1288caa994ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AppInit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ApplicationMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Log.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\LogDebugTarget.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\LogConstants.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Factory.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\RendererD3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Texture2DD3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\EffectD3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\EigenToD3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\MoveableTexturedQuad.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\QuadRendererD3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\JBRocketSystemInterface.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\JBRocketRenderInterfaceD3D.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\Input.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\InputWin32.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\RocketFlowScreenTimed.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SpaceInvadersFlowNode.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\ApplicationTime.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CoreComponents\Box2DBodyComponent.cpp">
+      <Filter>Source Files\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\CoreComponents\CameraComponent.cpp">
+      <Filter>Source Files\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\EigenToBox2D.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\Core\GameTime.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\PointerEvent.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\PointerState.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32\InputSystemWin32.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CoreComponents\MoveableQuadComponent.cpp">
+      <Filter>Source Files\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\RealTime.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\ScaledTime.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\SteppedTime.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\TurretYokeComponent.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\Win32\Win32InputState.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentModel\ComponentPool.cpp">
+      <Filter>Source Files\ComponentModel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentModel\Component.cpp">
+      <Filter>Source Files\ComponentModel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentModel\EntityComponentManager.cpp">
+      <Filter>Source Files\ComponentModel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameWorld.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\TurretPointerMovementComponent.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\InvaderWaveMover.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Messaging\Box2DMessageListener.cpp">
+      <Filter>Source Files\Game\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Physics\GamePhysicsConstants.cpp">
+      <Filter>Source Files\Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Messaging\GameMessageHub.cpp">
+      <Filter>Source Files\Game\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\Invader.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\Bullet.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\InvaderWaveManager.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\TextureManager.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Components\TurretController.cpp">
+      <Filter>Source Files\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\SetupGameState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\SetupStageState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\WaitPausedState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\PlayState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\CheckMoreLevelsState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentModel\Entity.cpp">
+      <Filter>Source Files\ComponentModel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\debug\DebugGameTimeController.cpp">
+      <Filter>Source Files\Game\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\StateOfTheGame.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\RocketScreen.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Screens\HUDScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GameStates\EndState.cpp">
+      <Filter>Source Files\Game\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\RocketFlowScreenClickBody.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\RunInformation.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\ConfigFile.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rocket\ProgressScreen.cpp">
+      <Filter>Source Files\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screens\RocketFlowScreenBase.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShouldBeDataDriven\EntityCreation.cpp">
+      <Filter>Source Files\ShouldBeDataDriven</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShouldBeDataDriven\ApplicationSetup.cpp">
+      <Filter>Source Files\ShouldBeDataDriven</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShouldBeDataDriven\GameSetup.cpp">
+      <Filter>Source Files\ShouldBeDataDriven</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ApplicationMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\SimpleLockFreeQueue.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\GeneralisedLockFreeQueue.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\LogConstants.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Log.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\ILogTarget.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\LogDebugTarget.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Instancer.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\DefaultInstancer.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Factory.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\RendererD3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Texture2DD3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\EffectD3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\EigenToD3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\EigenIncludes.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\ITexture2D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\MoveableTexturedQuad.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\QuadRendererD3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\JBRocketSystemInterface.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\JBRocketRenderInterfaceD3D.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\InputWin32.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\Input.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\GenericTraversal.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\RocketFlowScreenTimed.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComponentModel\Component.h">
+      <Filter>Header Files\ComponentModel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComponentModel\Entity.h">
+      <Filter>Header Files\ComponentModel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameWorld.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SpaceInvadersFlowNode.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\ApplicationTime.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CoreIncludes.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Typedefs.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComponentModel\EntityComponentManager.h">
+      <Filter>Header Files\ComponentModel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CoreComponents\Box2DBodyComponent.h">
+      <Filter>Header Files\CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CoreComponents\CameraComponent.h">
+      <Filter>Header Files\CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physics\EigenToBox2D.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Core\GameTime.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Utility\Helpers.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\ICamera.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\InputSystem.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Input\PointerEvent.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\PointerState.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\ITimeSource.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\SteppedTime.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\ScaledTime.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\RealTime.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CoreComponents\MoveableQuadComponent.h">
+      <Filter>Header Files\CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\SimpleAnimators.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Rect.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Win32\Win32InputState.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\TurretYokeComponent.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\TurretPointerMovementComponent.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComponentModel\ComponentPool.h">
+      <Filter>Header Files\ComponentModel</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Game\Components\InvaderWaveMover.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Data\InvaderWaveDefinition.h">
+      <Filter>Header Files\Game\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Functional\Action.h">
+      <Filter>Header Files\Core\Functional</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Functional\Invoker.h">
+      <Filter>Header Files\Core\Functional</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Messaging\GameMessageHub.h">
+      <Filter>Header Files\Game\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Messaging\Box2DMessageListener.h">
+      <Filter>Header Files\Game\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Physics\GamePhysicsConstants.h">
+      <Filter>Header Files\Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameContext.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Messaging\PhysicsContactEvent.h">
+      <Filter>Header Files\Game\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\Invader.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\Bullet.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\InvaderWaveManager.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\Graphics\TextureManager.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Messaging\GameEventTypes.h">
+      <Filter>Header Files\Game\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Components\TurretController.h">
+      <Filter>Header Files\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\StateMachine\SimpleStateMachine.h">
+      <Filter>Header Files\Core\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\StateMachine\SimpleBaseState.h">
+      <Filter>Header Files\Core\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\GameStateContext.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\SetupGameState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\SetupStageState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\WaitPausedState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\PlayState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\CheckMoreLevelsState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\StateMachine\ThreadedStateMachine.h">
+      <Filter>Header Files\Core\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\StateMachine\ThreadedBaseState.h">
+      <Filter>Header Files\Core\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\ApplicationContext.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\KeyCodes.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\KeyboardEvent.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\debug\DebugGameTimeController.h">
+      <Filter>Header Files\Game\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\StateOfTheGame.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\RocketScreen.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Screens\HUDScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GameStates\EndState.h">
+      <Filter>Header Files\Game\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\RocketFlowScreenClickBody.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\RunInformation.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\ConfigFile.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rocket\ProgressScreen.h">
+      <Filter>Header Files\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screens\RocketFlowScreenBase.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShouldBeDataDriven\EntityCreation.h">
+      <Filter>Header Files\ShouldBeDataDriven</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShouldBeDataDriven\ApplicationSetup.h">
+      <Filter>Header Files\ShouldBeDataDriven</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShouldBeDataDriven\GameSetup.h">
+      <Filter>Header Files\ShouldBeDataDriven</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Shaders\TexturedUnlit.fx">
+      <Filter>Content\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

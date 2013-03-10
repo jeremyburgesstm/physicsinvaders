@@ -1,0 +1,2 @@
+screenwidth:1280
+screenheight:720

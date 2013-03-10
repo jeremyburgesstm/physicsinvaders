@@ -1,0 +1,23 @@
+<rml>
+	<head>
+		<link type="text/rcss" href="../shared/core.rcss"/>
+		<style>
+		</style>
+	</head>
+
+	<body class="heading" id="clickme">
+		<h1>Physics Invaders Game Prototype</h1>
+		<h3>Created by Jeremy Burgess.</h3>
+		<p>This game prototype was produced as an example game (that ended up being pretty fun!) in order to test my ideas regarding building an entity component model myself, as well as to learn a little bit about working with DirectX 10/11. See the readme in the source code for details as to code structure, compromises made during building this, and what the next steps for this prototype are, should I decide to pick it up again.</p>
+		<br />
+		<p>Art kindly created by my wife, Frances Denton.</p>
+		<br /><br />
+		<h4>Middleware/external libraries used:</h4>
+		<h5>LibRocket - UI rendering and layout</h5>
+		<h5>Freetype - Font rendering</h5>
+		<h5>Box2D - Physics</h5>
+		<h5>Eigen - Vector and Matrix math and abstractions</h5>
+		<h5>Boost - Miscellaneous awesomeness</h5>
+		<div class="clicktocontinue">Click anywhere to continue</div>
+	</body>
+</rml>

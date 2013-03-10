@@ -10,7 +10,7 @@ Art kindly created by my wife, Frances Denton.
 
 Middleware/external libraries used:
 LibRocket - UI rendering and layout
-Freetype - Font rendering
+Freetype - Font rendering (used within LibRocket)
 Box2D - Physics
 Eigen - Vector and Matrix math and abstractions
 Boost - Miscellaneous awesomeness

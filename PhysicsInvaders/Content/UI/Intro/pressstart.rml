@@ -1,0 +1,38 @@
+<rml>
+	<head>
+		<link type="text/rcss" href="../shared/core.rcss"/>
+		<style>
+			.invadercontainer
+			{
+				left: 50%;
+				position: absolute;
+			}
+			
+			.invader
+			{
+				height: 744px;
+				width: 490px;
+			}
+			
+			.supertitle
+			{
+				color: #ADFF2F;
+				position: absolute;
+				top: 15%;
+				left: 5%;
+				font-size: 108;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body class="heading" id="clickme">
+		<div class="invadercontainer">
+			<img src="../images/spaceinvader burning.png" id="invader" />
+		</div>
+		<div class="supertitle">
+			PHYSICS INVADERS
+		</div>
+		<div class="clicktocontinue">Click anywhere to continue</div>
+	</body>
+</rml>
