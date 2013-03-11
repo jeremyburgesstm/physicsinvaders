@@ -8,7 +8,7 @@ This game prototype was produced as an example game (that ended up being pretty 
 
 Art kindly created by my wife, Frances Denton.
 
- * Middleware/external libraries used:
+### Middleware/external libraries used:
  * LibRocket - UI rendering and layout
  * Freetype - Font rendering (used within LibRocket)
  * Box2D - Physics
@@ -19,11 +19,11 @@ Art kindly created by my wife, Frances Denton.
 
 For now, the only supported platform for this is Win32/DirectX.
 
-1. Ensure you have Visual Studio 2010, The DirectX SDK, and Boost installed.
+1. Ensure you have Visual Studio 2010, The DirectX SDK, and Boost installed.  
    *  Note that this should work in VS 2012, however due to C++11 features used, earlier versions of the MSVC compiler will not support this codebase.
-2. Set the following environment variables:
-   *  BOOST_ROOT: Points at the boost install folder.
-   *  DXSDK_DIR: Points at the DirectX SDK install folder.
+2. Set the following environment variables:  
+   *  BOOST_ROOT: Points at the boost install folder.  
+   *  DXSDK_DIR: Points at the DirectX SDK install folder.  
 3. Open PhysicsInvaders.sln
 4. Build & Run!
 
