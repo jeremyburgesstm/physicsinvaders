@@ -147,9 +147,6 @@
     <ClCompile Include="src\Utility\LogConstants.cpp">
       <Filter>Source Files\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utility\Factory.cpp">
-      <Filter>Source Files\Utility</Filter>
-    </ClCompile>
     <ClCompile Include="src\Graphics\RendererD3D.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
@@ -332,12 +329,6 @@
     <ClInclude Include="src\ApplicationMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utility\SimpleLockFreeQueue.h">
-      <Filter>Header Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Utility\GeneralisedLockFreeQueue.h">
-      <Filter>Header Files\Utility</Filter>
-    </ClInclude>
     <ClInclude Include="src\Utility\LogConstants.h">
       <Filter>Header Files\Utility</Filter>
     </ClInclude>
@@ -348,15 +339,6 @@
       <Filter>Header Files\Utility</Filter>
     </ClInclude>
     <ClInclude Include="src\Utility\LogDebugTarget.h">
-      <Filter>Header Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Utility\Instancer.h">
-      <Filter>Header Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Utility\DefaultInstancer.h">
-      <Filter>Header Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Utility\Factory.h">
       <Filter>Header Files\Utility</Filter>
     </ClInclude>
     <ClInclude Include="src\Graphics\RendererD3D.h">

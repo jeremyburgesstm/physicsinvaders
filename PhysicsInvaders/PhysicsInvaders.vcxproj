@@ -155,7 +155,6 @@ xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore.dll" "$(OutDir)" /
     <ClCompile Include="src\ShouldBeDataDriven\EntityCreation.cpp" />
     <ClCompile Include="src\ShouldBeDataDriven\GameSetup.cpp" />
     <ClCompile Include="src\Utility\ApplicationTime.cpp" />
-    <ClCompile Include="src\Utility\Factory.cpp" />
     <ClCompile Include="src\Utility\Log.cpp" />
     <ClCompile Include="src\Utility\LogConstants.cpp" />
     <ClCompile Include="src\Utility\LogDebugTarget.cpp" />
@@ -241,19 +240,14 @@ xcopy "$(SolutionDir)..\ExternalLibs\librocket\bin\RocketCore.dll" "$(OutDir)" /
     <ClInclude Include="src\ShouldBeDataDriven\EntityCreation.h" />
     <ClInclude Include="src\ShouldBeDataDriven\GameSetup.h" />
     <ClInclude Include="src\Utility\ApplicationTime.h" />
-    <ClInclude Include="src\Utility\DefaultInstancer.h" />
-    <ClInclude Include="src\Utility\Factory.h" />
-    <ClInclude Include="src\Utility\GeneralisedLockFreeQueue.h" />
     <ClInclude Include="src\Utility\GenericTraversal.h" />
     <ClInclude Include=".\src\Utility\Helpers.h" />
     <ClInclude Include="src\Utility\ILogTarget.h" />
-    <ClInclude Include="src\Utility\Instancer.h" />
     <ClInclude Include="src\Utility\Log.h" />
     <ClInclude Include="src\Utility\LogConstants.h" />
     <ClInclude Include="src\Utility\LogDebugTarget.h" />
     <ClInclude Include="src\Utility\Rect.h" />
     <ClInclude Include="src\Utility\SimpleAnimators.h" />
-    <ClInclude Include="src\Utility\SimpleLockFreeQueue.h" />
     <ClInclude Include=".\src\Win32\Win32InputState.h" />
     <ClInclude Include=".\src\Graphics\TextureManager.h" />
   </ItemGroup>
